@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script>
+		
+	do {
+
+		var idade = prompt('Digite a idade da pessoa:')
+
+		idade = parseInt(idade)
+
+		var media = 0
+		var quantasidades = 0 
+		var idades = 0
+
+		quantasidades = quantasidades + 1
+
+		idades += idade
+
+		if(idade >= 21){
+			var maioridade = 0
+			maioridade = maioridade + 1
+		} 
+
+		media = idades/quantasidades
+
+
+
+		var chave = prompt('Deseja continuar cadastrando [S/N] ?')
+
+	} while (chave != 'n')
+
+		document.write('Foram digitadas ' + quantasidades + '<br />')
+		document.write('A media de idade é de ' + media + '<br />')
+		document.write('Temos ' + maioridade + ' idades maiores que 21 anos.<br/>')
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
