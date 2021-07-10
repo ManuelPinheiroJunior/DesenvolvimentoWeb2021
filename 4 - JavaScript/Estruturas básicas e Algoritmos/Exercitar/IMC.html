@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+
+	<script>
+
+
+		var altura = prompt('Digite o valor da sua altura:')
+		var peso = prompt('Digite o valor do seu peso(kg):')
+		var imc = null
+
+		altura = parseFloat(altura)
+		peso = parseFloat(peso)
+			
+			imc=peso/(altura*altura);
+			
+			if(imc<18.5){
+
+				document.write('ABAIXO DO PESO!')
+			} else if (imc>18.5 && imc<25) {
+				document.write('PESO IDEAL')				
+			} else if (imc>25 && imc<30) {
+			 	document.write('SOBREPESO!')
+			} else if (imc>30 && imc<40){
+				document.write('OBESIDADE!')
+			} else {
+				document.write('OBESIDADE MORBIDA!')
+			}
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
